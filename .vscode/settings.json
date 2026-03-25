@@ -1,0 +1,5 @@
+{
+    "idf.portWin": "COM12",
+    "idf.currentSetup": "d:\\ESP32\\v5.5.2\\esp-idf",
+    "idf.flashType": "JTAG"
+}
