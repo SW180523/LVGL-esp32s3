@@ -19,14 +19,16 @@
 #include "esp_err.h"
 #include "esp_log.h"
 #include "lvgl.h"
-#include "esp_lcd_st7796.h"
+//#include "esp_lcd_st7796.h"
 
 #if CONFIG_EXAMPLE_LCD_CONTROLLER_ILI9341
 #include "esp_lcd_ili9341.h"
 #elif CONFIG_EXAMPLE_LCD_CONTROLLER_GC9A01
 #include "esp_lcd_gc9a01.h"
-#elif CONFIG_EXAMPLE_LCD_CONTROLLER_ST7789
-#include "esp_lcd_st7789.h"
+#elif CONFIG_EXAMPLE_LCD_CONTROLLER_ST7796
+#include "esp_lcd_st7796.h"
+
+
 
 
 #endif
@@ -70,8 +72,8 @@ static const char *TAG = "ST7796";
 #define EXAMPLE_LCD_V_RES              240
 
 #elif CONFIG_EXAMPLE_LCD_CONTROLLER_ST7796
-#define EXAMPLE_LCD_H_RES             480 //240
-#define EXAMPLE_LCD_V_RES             320 //320
+#define EXAMPLE_LCD_H_RES             320 //240
+#define EXAMPLE_LCD_V_RES             480 //320
 
 #endif
 // Bit number used to represent command and parameter
